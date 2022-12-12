@@ -14,6 +14,7 @@
 		257ACF4F29460A3100F509B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257ACF4E29460A3100F509B8 /* Assets.xcassets */; };
 		257ACF5229460A3100F509B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257ACF5029460A3100F509B8 /* LaunchScreen.storyboard */; };
 		257ACF5C29460A8200F509B8 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 257ACF5B29460A8200F509B8 /* Network */; };
+		257ACF5F29460F4C00F509B8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 257ACF5E29460F4C00F509B8 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257ACF5C29460A8200F509B8 /* Network in Frameworks */,
+				257ACF5F29460F4C00F509B8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +99,7 @@
 			name = NetworkingDemo;
 			packageProductDependencies = (
 				257ACF5B29460A8200F509B8 /* Network */,
+				257ACF5E29460F4C00F509B8 /* Alamofire */,
 			);
 			productName = NetworkingDemo;
 			productReference = 257ACF4229460A2F00F509B8 /* NetworkingDemo.app */;
@@ -126,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 257ACF3929460A2F00F509B8;
+			packageReferences = (
+				257ACF5D29460F4C00F509B8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 257ACF4329460A2F00F509B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -374,10 +380,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		257ACF5D29460F4C00F509B8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		257ACF5B29460A8200F509B8 /* Network */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Network;
+		};
+		257ACF5E29460F4C00F509B8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257ACF5D29460F4C00F509B8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
